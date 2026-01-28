@@ -43,7 +43,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.UseMiddleware<SomeRandomMiddleware>();
-app.UseMiddleware<BasicAuthMiddleware>();
+app.UseMiddleware<BasicAuthMiddleware>(); // Added this to see if browser would work
 
 app.MapControllers();
 
